@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matrix Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/fullcalendar.css" />
+<link rel="stylesheet" href="css/jquery.gritter.css" />
+<link rel="stylesheet" href="css/matrix-style2.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="content">
+  <div  class="quick-actions_homepage">
+    <ul class="quick-actions">
+      <li class="bg_lb"> <a href="#"> <i class="icon-dashboard"></i> 公司报表 </a> </li>
+      <li class="bg_lg"> <a href="#"> <i class="icon-shopping-cart"></i> 采购清单 </a> </li>
+      <li class="bg_ly"> <a href="#"> <i class=" icon-globe"></i> 工厂分布 </a> </li>
+      <li class="bg_lo"> <a href="#"> <i class="icon-group"></i> 管理者 </a> </li>
+      <li class="bg_ls"> <a href="#"> <i class="icon-signal"></i> 营业状况 </a> </li>
+    </ul>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="widget-box">
+          <div class="widget-title bg_ly" data-toggle="collapse" href="#collapseG2"><span class="icon"><i class="icon-chevron-down"></i></span>
+            <h5>工作汇报与意见</h5>
+          </div>
+          <div class="widget-content nopadding collapse in" id="collapseG2">
+            <ul class="recent-posts">
+              <li>
+                <div class="user-thumb"> <img width="40" height="40" alt="User" src="img/demo/av1.jpg"> </div>
+                <div class="article-post"> <span class="user-info">  王威 / 日期: 2022年5月23日 / 时间: 19:27  </span>
+                  <p><a href="#">行政部已对各个部门进行抽查，抽查数据已上报。</a> </p>
+                </div>
+              </li>
+              <li>
+                <div class="user-thumb"> <img width="40" height="40" alt="User" src="img/demo/av2.jpg"> </div>
+                <div class="article-post"> <span class="user-info"> 许聪 / 日期: 2022年5月23日 / 时间: 19:13 </span>
+                  <p><a href="#">湘钢工厂炼钢师缺一人，需及时发布招聘信息，以便填补空缺。</a> </p>
+                </div>
+              </li>
+              <li>
+                <div class="user-thumb"> <img width="40" height="40" alt="User" src="img/demo/av4.jpg"> </div>
+                <div class="article-post"> <span class="user-info"> 张少华 /日期: 2022年5月23日 / 时间: 18:52 </span>
+                  <p><a href="#">行政部经理你好，我是湘钢工厂员工张少华，由于家中有要事，故此在5月24日请假一天，希望能够得到批准，谢谢。请假条如下……</a> </p>
+                </div>
+              <li>
+                <button class="btn btn-warning btn-mini">立即更新</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+            <h5>任务清单</h5>
+          </div>
+          <div class="widget-content">
+            <div class="todo">
+              <ul>
+                <li class="clearfix">
+                  <div class="txt"> 进货铁料400吨 <span class="by label">Nirav</span> <span class="date badge badge-important">Today</span> </div>
+                  <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                </li>
+                <li class="clearfix">
+                  <div class="txt"> 出售湘钢材料400吨 <span class="by label">Alex</span> <span class="date badge badge-warning">Today</span> </div>
+                  <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                </li>
+                <li class="clearfix">
+                  <div class="txt"> 与李总在湘潭中心进行会谈 <span class="by label">Admin</span> <span class="date badge badge-success">Tomorrow</span> </div>
+                  <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                </li>
+                <li class="clearfix">
+                  <div class="txt"> 出席湘钢材料检查工作 <span class="by label">Admin</span> <span class="date badge badge-info">06.18.2020</span> </div>
+                  <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+            <h5>工作进程</h5>
+          </div>
+          <div class="widget-content">
+            <ul class="unstyled">
+              <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 已完成 90%  <span class="pull-right strong">造船板5000吨</span>
+                <div class="progress progress-striped ">
+                  <div style="width: 90%;" class="bar"></div>
+                </div>
+              </li>
+              <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 已完成 60% <span class="pull-right strong">优碳板2000吨</span>
+                <div class="progress progress-success progress-striped ">
+                  <div style="width: 60%;" class="bar"></div>
+                </div>
+              </li>
+              <li> <span class="icon24 icomoon-icon-arrow-down-2 red"></span> 已完成 49% <span class="pull-right strong">桥梁板30000吨</span>
+                <div class="progress progress-warning progress-striped ">
+                  <div style="width: 49%;" class="bar"></div>
+                </div>
+              </li>
+              <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 已完成 3% <span class="pull-right strong">低合金板500吨</span>
+                <div class="progress progress-danger progress-striped ">
+                  <div style="width: 3%;" class="bar"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="widget-box">
+          <div class="widget-title bg_lo"  data-toggle="collapse" href="#collapseG3" > <span class="icon"> <i class="icon-chevron-down"></i> </span>
+            <h5>新闻</h5>
+          </div>
+          <div class="widget-content nopadding updates collapse in" id="collapseG3">
+            <div class="new-update clearfix"><i class="icon-ok-sign"></i>
+              <div class="update-done"><a title="" href="#"><strong>年开采50万吨白云石矿建设项目（报批件）公示</strong></a> <span>年开采50万吨白云石矿建设项目（报批件）公示 ...</span> </div>
+              <div class="update-date"><span class="update-day">02</span>2月</div>
+            </div>
+            <div class="new-update clearfix"> <i class="icon-gift"></i> <span class="update-notice"> <a title="" href="#"><strong>华菱湘钢再次中标世界级超大跨海项目 </strong></a> <span>近日，深中通道桥梁工程项目采购钢板中标单位正式公示，湘钢以 ...</span> </span> <span class="update-date"><span class="update-day">22</span>5月</span> </div>
+            <div class="new-update clearfix"> <i class="icon-move"></i> <span class="update-alert"> <a title="" href="#"><strong>湘钢、移动、华为联合签约《信息技术+智能制造融合发展白皮书》</strong></a> <span>为进一步巩固前期成果，深化长效战略合作 ...</span> </span> <span class="update-date"><span class="update-day">06</span>5月</span> </div>
+            <div class="new-update clearfix"> <i class="icon-leaf"></i> <span class="update-done"> <a title="" href="#"><strong>华菱线缆“金牌产品”助力长征三号乙运载火箭成功发射</strong></a> <span>3月9日19时55分，西昌卫星发射中心，长征三号 ...</span> </span> <span class="update-date"><span class="update-day">19</span>3月</span> </div>
+            <div class="new-update clearfix"> <i class="icon-question-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>华菱湘钢供货亚洲设计水深最深导管架</strong></a> <span>中国海油陆丰油田群区域开发项目（以下简称陆丰开发项目）...</span> </span> <span class="update-date"><span class="update-day">19</span>3月</span> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    
+  </div>
+</div>
+
+<script src="js/excanvas.min.js"></script> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flot.min.js"></script> 
+<script src="js/jquery.flot.resize.min.js"></script> 
+<script src="js/jquery.peity.min.js"></script> 
+<script src="js/jquery.gritter.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/fullcalendar.min.js"></script> 
+<script src="js/matrix.calendar.js"></script> 
+<script src="js/matrix.chat.js"></script> 
+<script src="js/jquery.validate.js"></script> 
+<script src="js/matrix.form_validation.js"></script> 
+<script src="js/jquery.wizard.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/matrix.popover.js"></script> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/matrix.tables.js"></script> 
+<script src="js/matrix.interface.js"></script> 
+<script type="text/javascript">
+  // This function is called from the pop-up menus to transfer to
+  // a different page. Ignore if the value returned is a null string:
+  function goPage (newURL) {
+
+      // if url is empty, skip the menu dividers and reset the menu selection to default
+      if (newURL != "") {
+      
+          // if url is "-", it is this page -- reset the menu:
+          if (newURL == "-" ) {
+              resetMenu();            
+          } 
+          // else, send page to designated URL            
+          else {  
+            document.location.href = newURL;
+          }
+      }
+  }
+
+// resets the menu selection upon entry to this page:
+function resetMenu() {
+   document.gomenu.selector.selectedIndex = 2;
+}
+</script>
+</body>
+</html>
